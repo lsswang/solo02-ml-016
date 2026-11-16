@@ -1,0 +1,101 @@
+{
+  "seed": 161803,
+  "wpe_cases": [
+    {
+      "id": "ordinary",
+      "path": "fixtures/ordinary.npz",
+      "segments": 1,
+      "taps": 2,
+      "delay": 2,
+      "iterations": 3,
+      "description": "一个连续片段，两个频点"
+    },
+    {
+      "id": "shared",
+      "path": "fixtures/shared.npz",
+      "segments": 2,
+      "taps": 2,
+      "delay": 2,
+      "iterations": 3,
+      "description": "同一阵列的两个独立起点片段"
+    },
+    {
+      "id": "zero",
+      "path": "fixtures/zero.npz",
+      "segments": 2,
+      "taps": 8,
+      "delay": 4,
+      "iterations": 3,
+      "description": "全零频谱，仍有完整历史训练行"
+    },
+    {
+      "id": "duplicate_channels",
+      "path": "fixtures/duplicate_channels.npz",
+      "segments": 2,
+      "taps": 3,
+      "delay": 2,
+      "iterations": 3,
+      "description": "两个通道逐帧相同"
+    },
+    {
+      "id": "near_collinear",
+      "path": "fixtures/near_collinear.npz",
+      "segments": 8,
+      "taps": 8,
+      "delay": 4,
+      "iterations": 2,
+      "description": "原范围内八片长录音，两个通道高度相关"
+    }
+  ],
+  "spatial_path": "fixtures/spatial.npz",
+  "spatial_cases": [
+    {
+      "id": "ordinary",
+      "R": "ordinary_R",
+      "C": "ordinary_C",
+      "g": "ordinary_g"
+    },
+    {
+      "id": "null_noise",
+      "R": "null_noise_R",
+      "C": "null_noise_C",
+      "g": "null_noise_g"
+    },
+    {
+      "id": "redundant",
+      "R": "redundant_R",
+      "C": "redundant_C",
+      "g": "redundant_g"
+    },
+    {
+      "id": "conflicting",
+      "R": "conflicting_R",
+      "C": "conflicting_C",
+      "g": "conflicting_g"
+    },
+    {
+      "id": "zero_covariance",
+      "R": "zero_covariance_R",
+      "C": "zero_covariance_C",
+      "g": "zero_covariance_g"
+    },
+    {
+      "id": "zero_constraints",
+      "R": "zero_constraints_R",
+      "C": "zero_constraints_C",
+      "g": "zero_constraints_g"
+    },
+    {
+      "id": "zero_constraints_conflicting",
+      "R": "zero_constraints_conflicting_R",
+      "C": "zero_constraints_conflicting_C",
+      "g": "zero_constraints_conflicting_g"
+    },
+    {
+      "id": "multiple_response",
+      "R": "multiple_response_R",
+      "C": "multiple_response_C",
+      "g": "multiple_response_g"
+    }
+  ]
+}
